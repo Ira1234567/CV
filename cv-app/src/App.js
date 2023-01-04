@@ -8,6 +8,7 @@ import Courses from './components/Courses';
 import Certificates from './components/Certificates';
 import Education from './components/Education';
 import Projects from './components/Projects';
+import './styles/App.css'
 
 const enCVInfo = {
   contacts: {
@@ -25,25 +26,26 @@ const enCVInfo = {
   },
   mainInfo: {
     name: 'Iryna Smyrnova',
-    position: 'Junior/Trainee Front-end developer',
-    information: 'The beginner in IT who gained professional knowledges by combination of attending courses and self-learning. Have a high level of efficiency and responsible attitude to implementation of work tasks. Willing to learn and improve my skills by working on real projects. Now looking for an opportunity for starting career as a front-end developer.'
+    position: 'Junior/Trainee Front-end Developer',
+    information: 'The beginner in IT who gained professional knowledges by combination of attending courses and self-learning. Have a high level of efficiency and responsible attitude to implementation of work tasks. Willing to learn and improve my skills by working on real projects. Now looking for an opportunity for starting career as a Front-end Developer.'
   },
   languages: {
     title: 'Languages',
-    languagesList: [{title: 'Ukrainian', level: 'Native'}, {title: 'English', level: 'B2'}, {title: 'German', level: 'A1'}]
+    languagesList: [{title: 'Ukrainian', level: 'native'}, {title: 'English', level: 'B2'}, {title: 'German', level: 'A1'}]
   },
   courses: {
     title: 'Courses',
-    coursesList: [{title: 'React online marathon in Softserve IT Academy', startDate: '10.2022', finishDate: '12.2022'}, {title: 'HTML/CSS/JS Fundamentals course in Softserve IT Academy', startDate: '9.2022 ', finishDate: '10.2022'}]
+    coursesList: [{title: 'React Online Marathon in Softserve IT Academy', startDate: '10.2022', finishDate: '12.2022'}, 
+    {title: 'HTML5/CSS3/JavaScript Fundamentals course in Softserve IT Academy', startDate: '09.2022 ', finishDate: '10.2022'}]
   },
   extraCourses: {
     title: 'Additional courses',
       coursesList: [
-        {title: 'Python Pro in Hillel IT School', startDate: '2.2022', finishDate: '6.2022', 
-        checkCert: <a href='https://certificate.ithillel.ua/view/73826253?utm_source=mailgun&utm_medium=email&utm_campaign=certificateNotification'>
+        {title: 'Python Pro in Hillel IT School', startDate: '02.2022', finishDate: '06.2022', 
+        checkCert: <a className='mainPageLink' href='https://certificate.ithillel.ua/view/73826253?utm_source=mailgun&utm_medium=email&utm_campaign=certificateNotification'>
           View certificate</a>}, 
-        {title: 'Python Introduction in Hillel IT School', startDate: '10.2021 ', finishDate: '1.2022', 
-        checkCert: <a href='https://certificate.ithillel.ua/view/69667245?utm_source=mailgun&utm_medium=email&utm_campaign=certificateNotification'>
+        {title: 'Python Introduction in Hillel IT School', startDate: '10.2021 ', finishDate: '01.2022', 
+        checkCert: <a className='mainPageLink' href='https://certificate.ithillel.ua/view/69667245?utm_source=mailgun&utm_medium=email&utm_campaign=certificateNotification'>
         View certificate</a>}]
   },
   education: {
@@ -55,7 +57,9 @@ const enCVInfo = {
   },
   projects: {
     title: 'Projects',
-    projectsList: [{description: 'Pet store website', type: 'Team project', technologies: 'HTML, CSS, JS', url: 'https://github.com/koldovsky/714-team-06'}, {description: 'CV Project', type: 'Single project', technologies: 'React', url: 'https://github.com/Ira1234567/CV'}]
+    projectsList: [{description: 'Pet store website', type: 'Team project', technologies: 'HTML, CSS, JS', 
+    url: 'https://github.com/koldovsky/714-team-06'}, 
+    {description: 'CV project', type: 'Single project', technologies: 'React', url: 'https://github.com/Ira1234567/CV'}]
   },
   certificates: {
     buttonShowText: 'View certificates',
@@ -84,20 +88,21 @@ const ukrCVInfo = {
   },
   languages: {
     title: 'Мови',
-    languagesList: [{title: 'Українська', level: 'Носій'}, {title: 'Англійська', level: 'B2'}, {title: 'Німецька', level: 'A1'}]
+    languagesList: [{title: 'Українська', level: 'носій'}, {title: 'Англійська', level: 'B2'}, {title: 'Німецька', level: 'A1'}]
   },
   courses: {
     title: 'Курси',
-    coursesList: [{title: 'React онлайн марафон у Softserve IT Академії', startDate: '10.2022', finishDate: '12.2022'}, {title: 'HTML/CSS/JS Fundamentals курс у Softserve IT Академії', startDate: '9.2022 ', finishDate: '10.2022'}]
+    coursesList: [{title: 'React Онлайн Марафон у Softserve IT Академії', startDate: '10.2022', finishDate: '12.2022'}, 
+    {title: 'HTML5/CSS3/JavaScript Fundamentals курс у Softserve IT Академії', startDate: '09.2022 ', finishDate: '10.2022'}]
   },
   extraCourses: {
     title: 'Додаткові курси',
     coursesList: [
-      {title: 'Python Pro у Hillel IT School', startDate: '2.2022', finishDate: '6.2022', 
-      checkCert: <a href='https://certificate.ithillel.ua/view/73826253?utm_source=mailgun&utm_medium=email&utm_campaign=certificateNotification'>
+      {title: 'Python Pro у Hillel IT School', startDate: '02.2022', finishDate: '06.2022', 
+      checkCert: <a className='mainPageLink' href='https://certificate.ithillel.ua/view/73826253?utm_source=mailgun&utm_medium=email&utm_campaign=certificateNotification'>
       Переглянути сертифікат</a>}, 
-      {title: 'Python Introduction у Hillel IT School', startDate: '10.2021 ', finishDate: '1.2022', 
-      checkCert: <a href='https://certificate.ithillel.ua/view/69667245?utm_source=mailgun&utm_medium=email&utm_campaign=certificateNotification'>
+      {title: 'Python Introduction у Hillel IT School', startDate: '10.2021 ', finishDate: '01.2022', 
+      checkCert: <a className='mainPageLink' href='https://certificate.ithillel.ua/view/69667245?utm_source=mailgun&utm_medium=email&utm_campaign=certificateNotification'>
       Переглянути сертифікат</a>}]
   },
   education: {
@@ -115,7 +120,7 @@ const ukrCVInfo = {
   },
   certificates: {
     buttonShowText: 'Переглянути сертифікати',
-    linkText: 'Натисність для перевірки'
+    linkText: 'Натисніть для перевірки'
   }
 };
 
@@ -134,22 +139,33 @@ function App() {
     setUkrButtonText('УКР');
 };
   return (
-    <div>
-      <button onClick={setEnLanguage}>{enButtonText}</button>
-      <button onClick={setUkrLanguage}>{ukrButtonText}</button>
-      <Photo />
-      <Contacts title={cvArr.contacts.title} phoneTitle={cvArr.contacts.phone.title} emailTitle={cvArr.contacts.email.title} 
-      phoneNumber={cvArr.contacts.phone.number} email={cvArr.contacts.email.email} />
-      <SkillsBlock type={cvArr.hardSkills.title} skillsList={cvArr.hardSkills.skillsList} />
-      <SkillsBlock type={cvArr.softSkills.title} skillsList={cvArr.softSkills.skillsList} />
-      <MainInfo name={cvArr.mainInfo.name} position={cvArr.mainInfo.position} information={cvArr.mainInfo.information} />
-      <Projects title={cvArr.projects.title} projectsList={cvArr.projects.projectsList}/>
-      <Languages title={cvArr.languages.title} languagesList={cvArr.languages.languagesList} />
-      <Courses title={cvArr.courses.title} coursesList={cvArr.courses.coursesList}/>
-      <Certificates buttonShowText={cvArr.certificates.buttonShowText} linkText={cvArr.certificates.linkText} />
-      <Courses title={cvArr.extraCourses.title} coursesList={cvArr.extraCourses.coursesList}/>
-      <Education title={cvArr.education.title} univercity={cvArr.education.univercity} specialty={cvArr.education.specialty} startDate={cvArr.education.startDate} finishDate={cvArr.education.finishDate} />
+    <>
+    <div className='header'>
+        <button className='headerLanguageButton' onClick={setEnLanguage}><span className='headerbuttonText'>{enButtonText}</span></button>
+        <button className='headerLanguageButton' onClick={setUkrLanguage}><span className='headerbuttonText'>{ukrButtonText}</span></button>
+      </div>
+    <div className='mainContainer'>
+      <div className='sideBar'>
+        <Photo />
+        <div className='sideBarSkillsContainer'>
+          <Contacts title={cvArr.contacts.title} phoneTitle={cvArr.contacts.phone.title} emailTitle={cvArr.contacts.email.title} 
+          phoneNumber={cvArr.contacts.phone.number} email={cvArr.contacts.email.email} />
+          <SkillsBlock type={cvArr.hardSkills.title} skillsList={cvArr.hardSkills.skillsList} />
+          <SkillsBlock type={cvArr.softSkills.title} skillsList={cvArr.softSkills.skillsList} />
+        </div>
+      </div>
+      <div className='mainPage'>
+        <MainInfo name={cvArr.mainInfo.name} position={cvArr.mainInfo.position} information={cvArr.mainInfo.information} />
+        <Projects title={cvArr.projects.title} projectsList={cvArr.projects.projectsList}/>
+        <Languages title={cvArr.languages.title} languagesList={cvArr.languages.languagesList} />
+        <Courses title={cvArr.courses.title} coursesList={cvArr.courses.coursesList}/>
+        <Certificates buttonShowText={cvArr.certificates.buttonShowText} linkText={cvArr.certificates.linkText} />
+        <Courses title={cvArr.extraCourses.title} coursesList={cvArr.extraCourses.coursesList}/>
+        <Education title={cvArr.education.title} univercity={cvArr.education.univercity} specialty={cvArr.education.specialty} 
+        startDate={cvArr.education.startDate} finishDate={cvArr.education.finishDate} />
+      </div>
     </div>
+    </>
   );
 }
 

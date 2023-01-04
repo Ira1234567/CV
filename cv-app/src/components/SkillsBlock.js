@@ -13,20 +13,20 @@ const SkillsBlock = (props) => {
     if(chosenValue === 'show') {
         return (
             <div>
-                <h2>{props.type}</h2>
+                <h2 className="sideBarTitle">{props.type}</h2>
                 <ul>
                     {props.skillsList.map( el =>
                         <li key={el}>{el}</li>
                     )}
                 </ul>
-                <button onClick={skillsClickHandler}><span className="material-symbols-outlined">expand_less</span></button>
+                <button className='sideBarButton' onClick={skillsClickHandler}><span className="material-symbols-outlined">expand_less</span></button>
             </div>
         )
     } else {
         return (
-            <div>
-                <h2>{props.type}</h2>
-                <button onClick={skillsClickHandler}><span className="material-symbols-outlined">expand_more</span></button>
+            <div className="sideBarBlock">
+                <h2 className="sideBarTitle">{props.type}</h2>
+                <button className='sideBarButton' onClick={skillsClickHandler}><span className="material-symbols-outlined">expand_more</span></button>
             </div>
         ) 
     }

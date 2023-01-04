@@ -3,8 +3,8 @@ import React, {useState} from "react";
 const Certificates = (props) => {
     const [certificateNumber, setCertificateNumber] = useState(0);
     const [certificateState, setCertificateState] = useState('hide');
-    const certificatesArray = [<img src={require('../img/certificate-react-marathon.jpg')} alt='Fundamentals course certificate'></img>, 
-    <img src={require('../img/certificate-fundamentals.jpg')} alt='React Marathon course certificate'></img>]
+    const certificatesArray = [<img className="mainPageCertificate" src={require('../img/certificate-react-marathon.jpg')} alt='Fundamentals course certificate'></img>, 
+    <img className="mainPageCertificate" src={require('../img/certificate-fundamentals.jpg')} alt='React Marathon course certificate'></img>]
     const [currentCertificate, setCurrentCertificate] = useState(certificatesArray[0]);
     const showCertificates = () => {
         if (certificateState === 'hide') {
@@ -23,25 +23,23 @@ const Certificates = (props) => {
             setCurrentCertificate(certificatesArray[0]);
         } 
     };
-
+    console.log(props);
     if (certificateState === 'hide') {
         return (
             <div>
-                <button onClick={showCertificates}>{props.buttonShowText}</button>
+                <button className="mainPageButton" onClick={showCertificates}><span className="mainPageButtonText">{props.buttonShowText}</span></button>
             </div>
         )
     } else {
         return (
-            <div>
-                <button onClick={showCertificates}><span className="material-symbols-outlined">close</span></button>
-                <div>
-                    <button onClick={changeCertificate}><span className="material-symbols-outlined">arrow_back_ios</span></button>
-                    <div>
-                        <a href='https://career.softserveinc.com/en-us/certification/verification'>{props.linkText}</a>
-                        {currentCertificate}
+            <div className="mainPageContainer">
+                <button className="mainPageButton" onClick={showCertificates}><span className="material-symbols-outlined">close</span></button>
+                <a className='mainPageCertificatesLink' href='https://career.softserveinc.com/en-us/certification/verification'>{props.linkText}</a>
+                    <div className="mainPageCertificatesContainer">
+                        <button className="mainPageButton" onClick={changeCertificate}><span class="material-symbols-outlined">chevron_left</span></button>
+                            {currentCertificate}
+                        <button className="mainPageButton" onClick={changeCertificate}><span class="material-symbols-outlined">chevron_right</span></button>
                     </div>
-                    <button onClick={changeCertificate}><span className="material-symbols-outlined">arrow_forward_ios</span></button>
-                </div>
             </div>
         )
     } 

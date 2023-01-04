@@ -1,0 +1,154 @@
+:root {
+    --light-main-color: rgb(240, 240, 239);
+    --dark-main-color: rgb(65, 67, 66);
+    --details-first-color: rgb(64, 192, 128);
+    --details-second-color: rgb(111, 112, 110);
+    --dark-font-color: rgb(19, 19, 18);
+    --light-font-color: rgb(163, 163, 151);
+  }
+
+.header {
+    background-color: var(--dark-main-color);
+    position: fixed;
+    width: 100%;
+    height: 8%;
+}
+
+.headerLanguageButton {
+    border-color: var(--details-first-color);
+    background-color: var(--light-main-color);
+    width: max-content;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.headerLanguageButton:hover {
+    background-color: var(--details-first-color);
+}
+
+.headerbuttonText {
+    font-size: large;
+    color: var(--dark-main-color);
+}
+
+.mainContainer {
+    padding-top: 4%;
+    background-color: var(--light-main-color);
+    display: flex;
+    flex-direction: raw;
+    flex-wrap: nowrap;
+}
+
+.sideBar {
+    background-color: var(--dark-main-color); 
+    color: var(--light-font-color);
+    max-width: max-content;
+    padding-bottom: 5%;
+    text-align: left;
+}
+
+.sideBarPhoto {
+    width: fit-content;
+    max-height: 500px;
+}
+
+.sideBarSkillsContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.sideBarTitle {
+    margin-top: 18%;
+    margin-bottom: 10%;
+}
+
+.sideBarLink {
+    color: var(--details-first-color);
+}
+
+.sideBarLink:hover {
+    color: var(--light-main-color);
+}
+
+.sideBarButton {
+    background-color: var(--dark-main-color);
+    border-color: var(--details-first-color);
+    color: var(--details-first-color);
+    margin: 0 30%;
+}
+
+.sideBarButton:hover {
+    background-color: var(--details-first-color);
+    color: var(--dark-main-color);
+}
+
+.mainPage {
+    padding: 2%;
+    color: var(--dark-main-color);
+}
+
+.mainPageTitle {
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.mainPageLink {
+    color: var(--details-first-color);
+}
+
+.mainPageLink:hover {
+    color: var(--details-second-color)
+}
+
+.mainPageText {
+    margin-bottom: 1%;
+}
+
+.mainPageInfoText {
+    font-weight: 400;
+    margin-right: 20%;
+    text-align: justify;
+}
+
+.mainPageButton {
+    background-color: var(--dark-main-color);
+    color: var(--details-first-color);
+}
+
+.mainPageButton:hover {
+    background-color:  var(--details-first-color);
+    color: var(--dark-main-color);
+}
+
+.mainPageCertificate {
+    max-width: 800px;
+    max-height: 800px;
+}
+
+.mainPageContainer {
+    background-color: var(--light-font-color);
+}
+
+.mainPageCertificatesContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.5%;
+    padding-bottom: 5%;
+}
+
+.mainPageButtonText {
+    font-size: large;
+}
+
+.mainPageCertificatesLink {
+    color: var(--dark-main-color);
+    font-size: larger;
+    margin-left: 1%;
+}
+
+.mainPageCertificatesLink:hover {
+    color: var(--light-main-color);
+}
+

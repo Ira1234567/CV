@@ -4,8 +4,8 @@ const MainInfo = (props) => {
     return (
         <div>
             <h1>{props.name}</h1>
-            <h2>{props.position}</h2>
-            <p>{props.information}</p>
+            <h2 className="mainPageTitle">{props.position}</h2>
+            <p className='mainPageInfoText'>{props.information}</p>
         </div>
     )
 }
