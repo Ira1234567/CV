@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/cv/static/css/main.1b6999e8.css",
+    "main.js": "/cv/static/js/main.cffb1b0a.js",
+    "static/js/787.dbc30ae6.chunk.js": "/cv/static/js/787.dbc30ae6.chunk.js",
+    "static/media/certificate-fundamentals.jpg": "/cv/static/media/certificate-fundamentals.81aa48f87fcb64ca0d7c.jpg",
+    "static/media/certificate-react-marathon.jpg": "/cv/static/media/certificate-react-marathon.4ee8cfbf1c91f1eccbd4.jpg",
+    "static/media/app-photo.jpg": "/cv/static/media/app-photo.38a126bab14c5bbd51c6.jpg",
+    "index.html": "/cv/index.html",
+    "main.1b6999e8.css.map": "/cv/static/css/main.1b6999e8.css.map",
+    "main.cffb1b0a.js.map": "/cv/static/js/main.cffb1b0a.js.map",
+    "787.dbc30ae6.chunk.js.map": "/cv/static/js/787.dbc30ae6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b6999e8.css",
+    "static/js/main.cffb1b0a.js"
+  ]
+}
