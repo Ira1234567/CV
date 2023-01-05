@@ -171,4 +171,3 @@ function App() {
 
 export default App;
 
-//correct translation
