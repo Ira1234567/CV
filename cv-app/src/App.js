@@ -116,7 +116,7 @@ const ukrCVInfo = {
     title: 'Проекти',
     projectsList: [{description: 'Сайт магазину товарів для тварин', type: 'Командний проект', technologies: 'HTML, CSS, JS', 
     url: 'https://github.com/koldovsky/714-team-06'}, 
-    {description: 'Резюме', type: 'Самостійний проект', technologies: 'React', url: 'https://github.com/Ira1234567/CV'}]
+    {description: 'Резюме', type: 'Самостійний проект', technologies: 'React', url: 'https://smyrnova-iryna.github.io/cv/'}]
   },
   certificates: {
     buttonShowText: 'Переглянути сертифікати',
