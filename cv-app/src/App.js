@@ -59,7 +59,7 @@ const enCVInfo = {
     title: 'Projects',
     projectsList: [{description: 'Pet store website', type: 'Team project', technologies: 'HTML, CSS, JS', 
     url: 'https://github.com/koldovsky/714-team-06'}, 
-    {description: 'CV project', type: 'Single project', technologies: 'React', url: 'https://github.com/Ira1234567/CV'}]
+    {description: 'CV project', type: 'Single project', technologies: 'React', url: 'https://smyrnova-iryna.github.io/cv/'}]
   },
   certificates: {
     buttonShowText: 'View certificates',

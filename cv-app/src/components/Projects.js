@@ -13,7 +13,7 @@ const Projects = (props) => {
                 <li>
                     <p>{props.projectsList[1].description} - [{props.projectsList[1].technologies}]</p>
                     <p>{props.projectsList[1].type}</p>
-                    <p><a className='mainPageLink' href='https://github.com/Ira1234567/CV'>{props.projectsList[1].url}</a></p>
+                    <p><a className='mainPageLink' href='https://smyrnova-iryna.github.io/cv/'>{props.projectsList[1].url}</a></p>
                 </li>
             </ul>
         </div>
